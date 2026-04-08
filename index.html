@@ -3,145 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Différences de rendu entre Firefox, Chrome et Safari</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        .section {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        .section h2 {
-            color: #333;
-        }
-        .example {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-left: 5px solid #007bff;
-        }
-        /* Exemple 1: Flexbox avec align-items */
-        .flexbox-example {
-            display: flex;
-            align-items: center; /* Différences dans l'alignement vertical */
-            height: 100px;
-            background-color: #e9ecef;
-        }
-        .flexbox-item {
-            width: 50px;
-            height: 50px;
-            background-color: #007bff;
-            margin: 5px;
-        }
-        /* Exemple 2: Box-shadow et border-radius */
-        .shadow-example {
-            width: 200px;
-            height: 100px;
-            background-color: #28a745;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Différences dans le rendu des ombres */
-        }
-        /* Exemple 3: Font-smoothing */
-        .font-example {
-            font-size: 24px;
-            -webkit-font-smoothing: antialiased; /* Chrome/Safari */
-            -moz-osx-font-smoothing: grayscale; /* Firefox */
-        }
-        /* Exemple 4: Input range slider */
-        .slider-example input[type="range"] {
-            width: 100%;
-        }
-        /* Exemple 5: CSS Grid avec gap */
-        .grid-example {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px; /* Différences dans l'espacement */
-        }
-        .grid-item {
-            background-color: #ffc107;
-            padding: 20px;
-            text-align: center;
-        }
-        /* Exemple 6: Overflow scroll */
-        .scroll-example {
-            height: 100px;
-            overflow: scroll;
-            background-color: #f0f0f0;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <title>Exemple multi-sections</title>
 </head>
 <body>
-    <h1>Différences de rendu entre Firefox, Chrome et Safari</h1>
-    <p>Cette page HTML présente des exemples d'éléments HTML/CSS qui peuvent se rendre différemment dans Firefox, Chrome et Safari. Ouvrez cette page dans chaque navigateur pour observer les variations. Notez que les différences peuvent être subtiles et dépendre des versions des navigateurs.</p>
 
-    <div class="section">
-        <h2>1. Flexbox et align-items</h2>
-        <p>Les navigateurs peuvent interpréter différemment l'alignement vertical dans Flexbox, surtout avec des éléments de tailles variables.</p>
-        <div class="example">
-            <div class="flexbox-example">
-                <div class="flexbox-item"></div>
-                <div class="flexbox-item" style="height: 30px;"></div>
-                <div class="flexbox-item"></div>
-            </div>
-        </div>
-    </div>
+    <h2>Présentation</h2>
+    <p>
+        Voici une première section avec un paragraphe explicatif. Tu peux modifier
+        le texte selon tes besoins.
+    </p>
 
-    <div class="section">
-        <h2>2. Box-shadow et border-radius</h2>
-        <p>Le rendu des ombres et des coins arrondis peut varier légèrement en termes de netteté et de performance.</p>
-        <div class="example">
-            <div class="shadow-example"></div>
-        </div>
-    </div>
+    <h2>Fonctionnalités</h2>
+    <p>
+        Cette section décrit les fonctionnalités principales. Ajoute ici tout ce
+        que tu veux détailler.
+    </p>
 
-    <div class="section">
-        <h2>3. Lissage des polices (Font-smoothing)</h2>
-        <p>Le rendu du texte peut différer : Chrome et Safari utilisent souvent l'anticrénelage, tandis que Firefox peut utiliser un rendu plus "grisé".</p>
-        <div class="example">
-            <p class="font-example">Exemple de texte avec lissage des polices activé.</p>
-        </div>
-    </div>
+    <h2>Conclusion</h2>
+    <p>
+        Dernière section pour conclure ta page. Parfait pour résumer ou ajouter
+        un message final.
+    </p>
 
-    <div class="section">
-        <h2>4. Curseur de plage (Input range)</h2>
-        <p>Les sliders peuvent avoir des styles par défaut différents selon le navigateur.</p>
-        <div class="example slider-example">
-            <input type="range" min="0" max="100" value="50">
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>5. CSS Grid avec gap</h2>
-        <p>L'espacement entre les éléments dans une grille peut être interprété différemment, surtout avec des unités relatives.</p>
-        <div class="example">
-            <div class="grid-example">
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>6. Overflow scroll</h2>
-        <p>Les barres de défilement peuvent avoir des styles différents selon le navigateur (largeur, apparence).</p>
-        <div class="example">
-            <div class="scroll-example">
-                <p>Ceci est un exemple de contenu qui dépasse la hauteur définie. Les navigateurs peuvent rendre les barres de défilement différemment. Par exemple, Firefox utilise des barres plus fines par défaut, tandis que Chrome et Safari peuvent avoir des barres plus larges ou stylisées.</p>
-                <p>Voici plus de contenu pour forcer le défilement vertical. Observez les différences dans l'apparence des ascenseurs entre Firefox, Chrome et Safari.</p>
-                <p>Encore du texte pour s'assurer que le contenu dépasse. Les barres de défilement sont un élément d'interface utilisateur qui peut varier considérablement d'un navigateur à l'autre.</p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
