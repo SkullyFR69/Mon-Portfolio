@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Clinique Vétérinaire de Mundolsheim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accueil de la Clinique Vétérinaire de Mundolsheim, soins et prévention pour animaux de compagnie.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+    <div style="text-align: center;">
+        <h1>Clinique Vétérinaire de Mundolsheim</h1>
+
+        <!-- Image -->
+        <img src="C:\Users\flore\Documents\Cours\HTML\clinique-veterinaire.jpg"
+             alt="Façade de la clinique vétérinaire de Mundolsheim"
+             width="600">
+    </div>
+
+    <p style="text-align: center;">Des soins professionnels pour vos animaux de compagnie.</p>
+</header>
+
+    <!-- Navigation -->
+    <nav aria-label="Menu principal" style="text-align: center;">
+    <ul style="list-style: none; padding: 0;">
+        <li><a href="#" aria-current="page">Accueil</a></li>
+        <li><a href="#">Consultations</a></li>
+        <li><a href="#">Équipe</a></li>
+        <li><a href="#">Tarifs</a></li>
+        <li><a href="#">Contact et Prise de Rendez-vous</a></li>
+    </ul>
+</nav>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Présentation -->
+        <section aria-labelledby="titre-intro">
+            <h2 id="titre-intro">Une clinique dédiée au bien-être animal</h2>
+
+            <p>
+                Depuis plus de dix ans, la Clinique de Mundolsheim accompagne les propriétaires
+                dans la santé et le suivi de leurs compagnons. Nous proposons des consultations
+                de médecine générale, des soins préventifs et un service d’urgence.
+            </p>
+
+            <p>
+                Notre équipe met un point d’honneur à offrir un accueil chaleureux,
+                des explications claires et des soins adaptés à chaque animal,
+                qu’il s’agisse d’un chien, d’un chat ou d’un petit mammifère.
+            </p>
+        </section>
+
+        <!-- Formulaire -->
+        <section aria-labelledby="titre-formulaire">
+            <h2 id="titre-formulaire">Prendre contact avec nous</h2>
+
+            <form action="#" method="post" aria-describedby="form-desc">
+                <p id="form-desc">
+                    Remplissez ce formulaire pour poser une question ou demander un rendez-vous.
+                </p>
+
+                <fieldset>
+                    <legend>Vos informations</legend>
+
+                    <div>
+                        <label for="nom">Nom et prénom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                     <div>
+                        <label for="numero">Numéro de téléphone</label>
+                        <input type="tel" id="numero" name="numero" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="animal">Animal concerné</label>
+                        <select id="animal" name="animal">
+                            <option value="">-- Choisissez une option --</option>
+                            <option value="chien">Chien</option>
+                            <option value="chat">Chat</option>
+                            <option value="rongeur">Rongeur</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <section aria-label="Informations légales">
+            <p>&copy; 2026 Clinique Vétérinaire de Mundolsheim</p>
+        </section>
+
+        <section aria-label="Coordonnées">
+            <p>Adresse : 4 rue du Val Fleuri, 67450 Mundolsheim</p>
+            <p>Téléphone : 03 88 12 34 56</p>
+            <p>
+                Suivez-nous :
+                <a href="#" aria-label="Facebook de la clinique">Facebook</a> |
+                <a href="#" aria-label="Instagram de la clinique">Instagram</a>
+            </p>
+        </section>
+    </footer>
+
+</body>
+</html>
